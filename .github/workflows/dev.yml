@@ -1,9 +1,9 @@
-name: "prod deploy"
+name: "dev deploy"
 on:
   push:
    branches:
     - "dev"
-permitions:
+permissions:
   id-token: write
   contents: read
 
