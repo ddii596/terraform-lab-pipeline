@@ -9,7 +9,7 @@ permitions:
 
 jobs:
   terraform: 
-    uses: ./.github.workflows.terraform.yml
+    uses: ./.github/workflows/terraform.yml
     with:
       envireoment: prod 
       aws-assume-role-arn: "arn:aws:iam::730335614976:role/github-actions-ddii596-pipeline"
