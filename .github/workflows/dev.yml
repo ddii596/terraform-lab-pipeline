@@ -14,5 +14,5 @@ jobs:
       envireoment: dev 
       aws-assume-role-arn: "arn:aws:iam::730335614976:role/github-actions-ddii596-pipeline"
       aws-region: "us-east-1"
-      inputs.aws-statefile-s3-bucket: "ddii596-lab-terraform-statefile"
+      aws-statefile-s3-bucket: "ddii596-lab-terraform-statefile"
       aws-lock-dynamodb-table: "ddii596-lab-terraform-lock"

@@ -1,1 +1,1 @@
-bucket_name="prd-lab-adilson-pipeline"
+bucket_name="dev-lab-adilson-pipeline"
