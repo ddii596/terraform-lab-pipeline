@@ -23,7 +23,7 @@
     terraform:
       runs-on: ubuntu-lastest
       defaults:
-        runs: 
+        run: 
           shell: bash
     
       steps:
