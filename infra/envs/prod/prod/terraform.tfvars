@@ -1,1 +1,0 @@
-bucket_name="dev-lab-adilson-pipeline"
