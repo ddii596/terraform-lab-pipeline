@@ -1,4 +1,3 @@
 resource "aws_s3_bucket" "bucket" {
-    bucket = var.bucket.name    
-  
+  bucket = var.bucket_name
 }
