@@ -1,17 +1,19 @@
-name: "dev deploy"
+name: "DEV DEPLOY"
+
 on:
   push:
-   branches:
-    - "dev"
+    branches:
+      - dev
+
 permissions:
   id-token: write
   contents: read
 
 jobs:
-  terraform: 
+  terraform:
     uses: ./.github/workflows/terraform.yml
     with:
-      envireoment: dev 
+      environment: dev
       aws-assume-role-arn: "arn:aws:iam::730335614976:role/github-actions-ddii596-pipeline"
       aws-region: "us-east-1"
       aws-statefile-s3-bucket: "ddii596-lab-terraform-statefile"
