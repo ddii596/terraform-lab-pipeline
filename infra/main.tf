@@ -3,8 +3,8 @@ resource "aws_s3_bucket" "bucket" {
 }
 
  resource "aws_instance" "app_server" {
-   ami           = "ami-08d70e59c07c61a3a"
-   instance_type = "t2.micro"
+   ami           = 
+   instance_type = "ami-0fff1b9a61dec8a5f"
 
    tags = {
     Name = var.instance_name
