@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "bucket" {
   bucket = var.bucket_name
+<<<<<<< HEAD
   acl    = "public-read" 
 
   website {
@@ -21,3 +22,14 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
     }]
   })
 }
+=======
+}
+
+ resource "aws_instance" "app_server" {
+   ami           = "ami-0fff1b9a61dec8a5f"
+   instance_type = "t2.micro"
+   tags = {
+    Name = var.instance_name
+   }
+ }
+>>>>>>> 3c94841bf670bbc5a4892dd0db2b6d19675b0f6e
