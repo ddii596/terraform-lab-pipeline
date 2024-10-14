@@ -21,7 +21,7 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
     }]
   })
 }
-=======
+
 }
 
  resource "aws_instance" "app_server" {
@@ -31,4 +31,3 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
     Name = var.instance_name
    }
  }
->>>>>>> 3c94841bf670bbc5a4892dd0db2b6d19675b0f6e
