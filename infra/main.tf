@@ -5,7 +5,8 @@ resource "aws_s3_bucket" "bucket" {
 resource "aws_s3_bucket_object" "object" {
   bucket = var.bucket_name
   key    = "html.index"
-  source = "html.index"
+  source = "\infra\index.html"
+  
 
   
 }
