@@ -1,4 +1,4 @@
 provider "aws" {
-  version = "~> 5.70.0"  # Define a versão
+  version = "~> 5.72.0"  # Define a versão
   region  = "us-east-1"
 }
