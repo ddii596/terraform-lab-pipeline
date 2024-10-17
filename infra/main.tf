@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "bucket" {
 
 resource "aws_s3_object" "object" {
   bucket = var.bucket_name
-  key    = "html.index"
+  key    = "index.html"
   source = "/home/runner/work/terraform-lab-pipeline/terraform-lab-pipeline/infra/html.index"
 
 
@@ -18,7 +18,8 @@ resource "aws_s3_bucket_website_configuration" "bucket_website" {
   bucket = aws_s3_bucket.bucket.id
 
   index_document {
-    suffix = "html.index"
+    suffix = "index.html"
+
   }
 
   
